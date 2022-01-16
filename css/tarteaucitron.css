@@ -1068,3 +1068,10 @@ tarteaucitronAllow {
 #tarteaucitronAlertBig.tarteaucitronAlertBigBottom {
 	display :none!important;
 }
+
+/* Suppression icon cookies */
+
+#tarteaucitronIcon {
+	display :none!important;
+}
+
