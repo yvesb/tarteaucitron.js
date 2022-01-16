@@ -1027,3 +1027,9 @@ div#tarteaucitronScrollbarAdjust.tarteaucitronAsk {
     padding-bottom: 0px !important;    
 	margin-bottom: 0px !important;
 }
+
+/* Suppression checkmark et croix */
+
+.tarteaucitronCheck, .tarteaucitronCross {
+	display :none!important;
+}
