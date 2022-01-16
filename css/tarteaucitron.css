@@ -945,7 +945,7 @@ div#tarteaucitronInfo {
     text-align: center!important;
     max-width: 80%!important;
     padding: 15px 0!important;
-    margin: -10px auto 40px!important;
+    margin: -10px auto /*40px*/!important;
     font-size: 1em!important;
     border-bottom: 1px solid;
     border-top: 1px solid;
@@ -1016,4 +1016,14 @@ span.tarteaucitronTitle.tarteaucitronH3 {
 
 div#tarteaucitronScrollbarAdjust.tarteaucitronAsk {
 	display :none!important;
+}
+
+/* Suppression espace laissé par "pour tous les services" retiré */
+/* !!!! margin bottom impossible à surchager => commenté en dur  */
+/* ligne 948													 */
+
+#tarteaucitronInfo {
+    border-bottom-style: none !important;
+    padding-bottom: 0px !important;    
+	margin-bottom: 0px !important;
 }
