@@ -992,3 +992,18 @@ span.tarteaucitronTitle.tarteaucitronH3 {
 .tarteaucitron-display-none {
     display: none;
 }
+
+/************************************************************
+*	Modifications ci-dessous pour surcharger le CSS global  *
+*	sans toucher le code existant pour le maintien futur    *
+************************************************************/
+
+/***********
+*	Style du panneau de gestion des cookies
+***********/
+
+/* Passage bouton "fermer" en majuscules */
+	
+#tarteaucitronClosePanel {
+	text-transform: uppercase;
+}
