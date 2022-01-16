@@ -1033,3 +1033,11 @@ div#tarteaucitronScrollbarAdjust.tarteaucitronAsk {
 .tarteaucitronCheck, .tarteaucitronCross {
 	display :none!important;
 }
+
+/* Suppression bouton "Autoriser" inactif dans la section des cookies obligatoires 
+   Ces cookies étant obligatoires, il est inutile, voire perturbant d'avoir un "bouton"
+   inactif. */
+   
+#tarteaucitron #tarteaucitronServices #tarteaucitronServices_mandatory .tarteaucitronAllow {
+  display: none !important;
+}
