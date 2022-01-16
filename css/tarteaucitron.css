@@ -1041,3 +1041,20 @@ div#tarteaucitronScrollbarAdjust.tarteaucitronAsk {
 #tarteaucitron #tarteaucitronServices #tarteaucitronServices_mandatory .tarteaucitronAllow {
   display: none !important;
 }
+
+/* Couleur des boutons actifs - vert/rouge remplacés car nudge behavior
+   dark-pattern */
+
+tarteaucitronAllow {
+	color: #cccccc !important;
+}
+
+#tarteaucitronRoot button.tarteaucitronAllow, #tarteaucitronRoot button.tarteaucitronDeny {
+  color: #000000 !important;
+}
+	
+#tarteaucitron #tarteaucitronServices .tarteaucitronLine.tarteaucitronIsAllowed .tarteaucitronAllow,
+#tarteaucitron #tarteaucitronServices .tarteaucitronLine.tarteaucitronIsDenied .tarteaucitronDeny {
+    background-color: #ffffff !important;
+	box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2) !important;
+}
