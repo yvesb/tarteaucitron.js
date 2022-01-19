@@ -1075,3 +1075,13 @@ tarteaucitronAllow {
 	display :none!important;
 }
 
+/* Remove all allowed / denied buttons on mobile */
+
+#tarteaucitronAllAllowed {
+	display :none!important;
+}
+
+#tarteaucitronAllDenied {
+	display :none!important;
+}
+
