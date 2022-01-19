@@ -21,7 +21,9 @@ tarteaucitron.lang = {
     "all": "Préférences pour tous les services",
 
     "info": "Protection de votre vie privée",
-    "disclaimer": "En autorisant ces services tiers, vous acceptez le dépôt et la lecture de cookies et l'utilisation de technologies de suivi nécessaires à leur bon fonctionnement.",
+    "disclaimer": 	"Ce site utilise utilise des cookies. Certains de ces cookies sont nécessaires à la fourniture du service.<br />" +
+					"D'autres cookies requièrent le consentement avant d'être déposés dans votre navigateur.<br />" +
+					"Ce panneau de gestion vous permet d'administrer l'usage des cookies comme vous l'entendez.",
     "allow": "Autoriser",
     "deny": "Interdire",
     "noCookie": "Ce service ne dépose aucun cookie.",
