@@ -49,7 +49,11 @@ tarteaucitron.lang = {
     "fallback": "est désactivé. En autorisant<br />" + 
 				"la lecture, vous autoriserez le dépôt<br />" + 
 				"de cookies tiers de traçage publicitaire<br />" + 
-				"par YouTube, selon <a href='https://policies.google.com/technologies/cookies?hl=fr' style='color: #8ebf42' target='_blank'>la politique de Google.</a><br />" + 
+				"par YouTube, selon <a href='https://policies.google.com/technologies/cookies?hl=fr' style='color: #8ebf42' target='_blank'>la politique de Google.</a><br />" +
+				"Ces cookies sont susceptibles de transmettre<br />" + 
+				"des données personnelles vers un pays tiers ne<br />" + 
+				"garantissant pas le même niveau de protection<br />" + 
+				"que la réglementation européenne.<br />" +
 				"Vous pourrez à tout moment retirer ce<br />" +
 				"consentement.<br /><br />",
     "allowed": "autorisé",
