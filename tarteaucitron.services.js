@@ -4950,3 +4950,34 @@ g.type='text/javascript';
     // when use deny cookie
     }
 };
+
+// Our World in data iframe
+tarteaucitron.services.ourworldindata = {
+    "key": "ourworldindata",
+    "type": "other",
+    "name": "Our World in Data (visualisation données Covid)",
+    "uri": "https://ourworldindata.org/privacy-policy",
+    "needConsent": true,
+    "cookies": [],
+    "js": function () {
+        "use strict";
+        tarteaucitron.fallback(['tac_iframe'], function (x) {
+            var frame_title = tarteaucitron.fixSelfXSS(x.getAttribute("title")),
+                width = x.getAttribute("width"),
+                height = x.getAttribute("height"),
+                allowfullscreen = x.getAttribute("allowfullscreen"),
+                url = x.getAttribute("data-url");
+
+            return '<iframe title="' + frame_title + '" src="' + url + '" width="' + width + '" height="' + height + '" scrolling="no" allowtransparency' + (allowfullscreen == '0' ? '' : ' webkitallowfullscreen mozallowfullscreen allowfullscreen') + '></iframe>';
+        });
+    },
+    "fallback": function () {
+        "use strict";
+        var id = 'ourworldindata';
+        tarteaucitron.fallback(['tac_iframe'], function (elem) {
+            elem.style.width = elem.getAttribute('width') + 'px';
+            elem.style.height = elem.getAttribute('height') + 'px';
+            return tarteaucitron.engage(id);
+        });
+    }
+};
