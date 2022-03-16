@@ -21,9 +21,10 @@ tarteaucitron.lang = {
     "all": "Préférences pour tous les services",
 
     "info": "Protection de votre vie privée",
-    "disclaimer": 	"Ce site utilise utilise des cookies. Certains de ces cookies sont nécessaires à la fourniture du service.<br />" +
-					"D'autres cookies requièrent le consentement avant d'être déposés dans votre navigateur.<br />" +
-					"Ce panneau de gestion vous permet d'administrer l'usage des cookies comme vous l'entendez.",
+    "disclaimer": 	"Lorsque vous naviguez sur le site Covidroit, des cookies sont déposés sur votre navigateur.<br />" + 
+					"Pour certains d’entre eux, votre consentement est nécessaire au bon fonctionnement du site<br />" +
+					"(pour en savoir plus, vous pouvez consulter notre <a href='https://www.covidroit.fr/politique-des-cookies/' target='_blank' style='font-size: 14px;font-weight: normal;'>« Politique des cookies »</a>)<br />" +
+					"Vous pouvez gérer l'utilisation des cookies pour chacune des catégories (hors cookies nécessaires)." ,
     "allow": "Autoriser",
     "deny": "Interdire",
     "noCookie": "Ce service ne dépose aucun cookie.",
