@@ -1085,3 +1085,28 @@ tarteaucitronAllow {
 	display :none!important;
 }
 
+/* background place holder for our world in data */
+
+.tac_activate.tac_activate_ourworldindata {
+    background: url(https://www.covidroit.fr/wp-content/uploads/2022/02/OurWorldInData_mobile_2022-02-20.png)!important ;
+    background-size: 100% 100%!important;  
+}
+
+@media (min-width: 768px) {
+	.tac_activate.tac_activate_ourworldindata {
+		background: url(https://www.covidroit.fr/wp-content/uploads/2022/02/OurWorldInData_2022-02-20.png)!important ;
+		background-size: 100% 100%!important;  
+	}
+}
+
+/* place holder ifram size for our world in data */
+
+.tac_iframe {
+	height: 600px!important;
+}	
+
+/* remove text / button for consent (replaced by link in page) */
+
+.tac_activate_ourworldindata .tac_float {
+    display :none!important;
+}
