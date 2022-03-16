@@ -4891,3 +4891,62 @@ tarteaucitron.services.studizz = {
     }
 };
 
+// matomoWP
+
+/*
+ matomo adjusted for Matomo Analytics WP extension (self hosted within WP) .
+ */
+tarteaucitron.services.matomoWP = {
+    "key": "matomoWP",
+    "type": "analytic",
+    "name": "Matomo",
+    "uri": "https://matomo.org/faq/general/faq_146/",
+    "needConsent": false,
+    "cookies": ['_pk_id', '_pk_ses'],
+    "js": function () {
+        "use strict";
+        if (tarteaucitron.user.matomoId === undefined) {
+            return;
+        }
+
+var _paq = window._paq = window._paq || [];
+
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+_paq.push(['alwaysUseSendBeacon']);
+_paq.push(['setTrackerUrl', matomoTrackURL]);
+_paq.push(['setSiteId', '1']);
+var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+
+g.type='text/javascript';
+ g.async=true;
+ g.src= matomoJsURL;
+ s.parentNode.insertBefore(g,s);
+
+        // waiting for piwik to be ready to check first party cookies
+        var interval = setInterval(function () {
+            if (typeof Piwik === 'undefined') return
+
+            clearInterval(interval)
+
+            // make piwik/matomo cookie accessible by getting tracker
+            Piwik.getTracker();
+
+            // looping throught cookies
+            var theCookies = document.cookie.split(';');
+            for (var i = 1; i <= theCookies.length; i++) {
+                var cookie = theCookies[i - 1].split('=');
+                var cookieName = cookie[0].trim();
+
+                // if cookie starts like a piwik one, register it
+                if (cookieName.indexOf('_pk_') === 0) {
+                    tarteaucitron.services.matomoWP.cookies.push(cookieName);
+                }
+            }
+        }, 100)
+	},
+	"fallback": function () {
+    "use strict";	  
+    // when use deny cookie
+    }
+};
