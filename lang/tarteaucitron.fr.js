@@ -69,7 +69,10 @@ tarteaucitron.lang = {
     },
     "video": {
         "title": "Vidéos",
-        "details": "Les services de partage de vidéo permettent d'enrichir le site de contenu multimédia et augmentent sa visibilité."
+        "details": "Les services de partage de vidéo permettent d'enrichir le site de contenu multimédia et augmentent sa visibilité.<br /><br />" +
+				"Ce service utilise des cookies tiers de traçage publicitaire par YouTube, selon la politique de Google." +
+				"Ces cookies sont susceptibles de transmettre des données personnelles vers un pays tiers ne" + 
+				" garantissant pas le même niveau de protection que la réglementation européenne."
     },
     "comment": {
         "title": "Commentaires",
