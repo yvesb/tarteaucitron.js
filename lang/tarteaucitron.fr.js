@@ -84,8 +84,11 @@ tarteaucitron.lang = {
         "details": "Les APIs permettent de charger des scripts : géolocalisation, moteurs de recherche, traductions, ..."
     },
     "other": {
-        "title": "Autre",
-        "details": "Services visant à afficher du contenu web."
+        "title": "Visualisation de services tiers",
+        "details": "Services visant à afficher du contenu web (données graphiques Covid).<br /><br />" +
+				"Ce service utilise des cookies tiers de mesure d'audience, selon la politique de ourworlindata.org. " +
+				"Ces cookies sont susceptibles de transmettre des données personnelles vers un pays tiers ne" + 
+				" garantissant pas le même niveau de protection que la réglementation européenne."
     },
     
     "mandatoryTitle": "Cookies obligatoires",
